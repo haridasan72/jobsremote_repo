@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+        <link rel="stylesheet" href= "{% static "css/jobs.css" %}">
+    <title></title>
+  </head>
+  <body>
+  <h1>Employee information</h1>
+  {% if job_list %}
+  <table>
+    <thead>
+      <th>Date</th>
+      <th>Company</th>
+      <th>Position</th>
+      <th>Eligibility</th>
+      <th>Address</th>
+      <th>Email id</th>
+      <th>Phone No.</th>
+    </thead>
+    {% for job in job_list %}
+    <tr>
+      <td>{{job.date}}</td>
+      <td>{{job.company}}</td>
+      <td>{{job.title}}</td>
+      <td>{{job.eligibility}}</td>
+      <td>{{job.address}}</td>
+      <td>{{job.email}}</td>
+      <td>{{job.phoneno}}</td>
+
+    </tr>
+    {% endfor %}
+  </table>
+    {% else %}
+    <p>No jobs found</p>
+      {% endif %}
+  </body>
+</html>

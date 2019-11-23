@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends 'jobapp/base.html'%}
+{% load staticfiles %}
+ {% block xyz  %}
+ {%endblock%}
+  {% block  body_block  %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href= "{% static "css/jobs.css" %}">
+    <title></title>
+  </head>
+  <body>
+    <div class="container" align = 'center'>
+  <div class="jumbotron jumbotron-fluid">
+  <h1 class="display-4">Welcome to Hari Job Portal</h1><br>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/kerjob" role="button">Kerala Jobs</a>
+     <a class="btn btn-primary btn-lg" href="/hydjob" role="button">Hydrabad Jobs</a>
+     <a class="btn btn-primary btn-lg" href="/banjob" role="button">Banglore Jobs</a>
+     <a class="btn btn-primary btn-lg" href="/chejob" role="button">Chennai Jobs</a><br><br><br>
+     <a class="btn btn-link" href="/kerform" role="button">Add Kerala Jobs</a>
+     <a class="btn btn-link" href="/hydform" role="button">Add Hydrabad Jobs</a>
+     <a class="btn btn-link" href="" role="button">Add Banglore Jobs</a>
+     <a class="btn btn-link" href="" role="button">Add Chennai Jobs</a>
+    </p>
+  </div>
+</div>
+
+  </body>
+   {%endblock%}
+</html>

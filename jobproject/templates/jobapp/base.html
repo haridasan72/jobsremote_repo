@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{%load staticfiles %}
+<html lang="en" dir="ltr">
+ <head>
+ <meta charset="utf-8">
+<title></title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href= "{% static "css/base.css" %}">
+{% block xyz %}{% endblock %}
+ </head>
+ <body>
+     <div class="navbar-container">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="#"> ........*********....... </a>
+    <a class="navbar-brand" href="#"> NAIR & NAIR JOB FINDER </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" class="navbar navbar-dark bg-dark">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="/kerjob">KERALA JOBS</a>  </li>
+        <li class="nav-item"> <a class="nav-link" href="/hydjob">HYDRABAD JOBS</a>  </li>
+        <li class="nav-item"> <a class="nav-link" href="/banjob">BANGLORE JOBS</a>  </li>
+        <li class="nav-item"> <a class="nav-link" href="/chejob">CHENNAI JOBS</a>  </li>
+    
+      </ul>
+    </div>
+  </nav>
+  </div>
+  <div class="sidebar-container">
+  <div class="sidebar-logo">
+    ADD JOBS
+  </div>
+  <ul class="sidebar-navigation">
+
+    <li>
+      <a href="/kerform">
+        <i class="fa fa-home" aria-hidden="true"></i> Add Kerala Jobs
+      </a>
+    </li>
+    <li>
+      <a href="/hydform">
+        <i class="fa fa-home" aria-hidden="true"></i> Add Hydrabad Jobs
+      </a>
+    </li>
+    <li>
+      <a href="/banform">
+        <i class="fa fa-home" aria-hidden="true"></i> Add Banglore Jobs
+      </a>
+    </li>
+    <li>
+      <a href="/chenform">
+        <i class="fa fa-home" aria-hidden="true"></i> Add Chennai Jobs
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="content-container">
+
+  <div class="container-fluid">
+
+  </div>
+</div>
+{% block  body_block  %}
+ {%  endblock  %}
+ </body>
+ </html>
